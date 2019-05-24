@@ -1,1 +1,361 @@
+@font-face {
+    font-family: "AardvarkCafe";
+    src: url('font/AardvarkCafe.ttf');
+    font-weight: bold;
+}
 
+@font-face {
+    font-family: "AvenirNext";
+    src: url('font/AvenirNext-Regular.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "AvenirNext";
+    src: url('font/AvenirNext-Bold.otf');
+    font-weight: bold;
+}
+
+/* 
+Reset
+*/
+/* Injecter des variables dans le CSS */
+:root {
+    --bleu: #00309A;
+    --jaune: #F9D648;
+    --saumon: #FF6B6B;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+    /* Intégrer padding et border dans la taille des boites */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Passer en base 10 */
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "AvenirNext", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    background-color: #ddd;
+    color: var(--bleu);
+    font-size: 14px;
+    line-height: 18px;
+}
+
+h1,
+a {
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/**/
+
+#warp {
+    width: 375px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+h1 {
+    font-family: "AardvarkCafe", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+}
+
+/* menu */
+
+header {
+    background-color: #fff;
+    font-size: 24px;
+}
+
+.topnav {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-menu {
+    flex-basis: 20%;
+}
+
+.logo {
+    flex-basis: 60%;
+    padding: 11px 0;
+}
+
+.logo img {
+    width: 154px;
+}
+
+.btn-search {
+    flex-basis: 20%;
+}
+
+.topnav #myLinks {
+    display: none;
+    flex-basis: 100%;
+    background-color: var(--jaune);
+}
+
+#myLinks a {
+    text-align: left;
+    color: var(--bleu);
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+}
+
+section {
+    padding: 50px 16px 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+p {
+    margin-bottom: 8px;
+    font-weight: normal;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.bleu {
+    background-color: var(--bleu);
+    color: #fff;
+}
+
+.jaune {
+    background-color: var(--jaune);
+    color: var(--bleu);
+}
+
+.saumon {
+    background-color: var(--saumon);
+    color: white;
+}
+
+footer {
+    padding: 16px 8px;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li a {
+    color: white;
+    padding: 16px;
+}
+
+.big-btn {
+    text-align: center;
+    font-weight: bold;
+    width: 331px;
+    display: inline-block;
+    padding: 18px 0px;
+    border-radius: 10px;
+    margin: 36px auto 0;
+}
+
+.section-video {
+    padding: 0 0 24px;
+}
+
+.video {
+    background-color: black;
+    padding: 50px 0;
+}
+
+.white-area {
+    color: var(--bleu);
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.titre {
+    font-family: 16px;
+    font-weight: bold;
+    padding: 24px 16px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 48px 263px;
+    padding: 8px 16px;
+}
+
+.wrapper a {
+    text-transform: lowercase;
+    text-decoration: underline;
+}
+
+.wrapper .col-img img {
+    width: 32px;
+    padding-top: 12px;
+}
+
+.wrapper .col-text {
+    text-align: left;
+    padding: 8px 0 0 8px;
+}
+
+.btn {
+    font-weight: bold;
+    display: block;
+    padding: 15px 0;
+    border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
+}
+
+.t-saumon {
+    color: var(--saumon);
+}
+
+.m20 {
+    margin: 20px 0;
+}
+
+.togl {
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.togl h2 {
+    font-family: "AardvarkCafe", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    text-align: left;
+    line-height: auto;
+}
+
+.togl button {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    width: 100%;
+}
+
+.faq-p p {
+    margin: 24px 0 8px;
+    font-weight: normal;
+    text-align: left;
+    text-align-last: left;
+}
+
+form {
+    text-align: left;
+    margin: 40px 0 0;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+form p {
+    text-align: left;
+    text-align-last: left;
+}
+
+input[type=text],
+input[type=number],
+input[type=email] {
+    background-color: transparent;
+    border: none;
+    color: var(--saumon);
+    padding: 5px 0px 5px 20px;
+    font-size: 14px;
+}
+
+input[type=email] {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.submit {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.img1 {
+    background-image: url(../img/identite.png);
+    background-position-x: -55px;
+    background-position-y: 50px;
+    background-repeat: no-repeat;
+}
+
+.img2 {
+    background-image: url("../img/mairie.png");
+    background-position-x: 290px;
+    background-position-y: 50px;
+    background-repeat: no-repeat
+}
+
+.img3 {
+    background-image: url("../img/calendar.png");
+    background-position-x: -55px;
+    background-position-y: 50px;
+    background-repeat: no-repeat;
+}
+
+.img4 {
+    background-image: url("../img/group.png");
+    background-position-x: 290px;
+    background-position-y: 50px;
+    background-repeat: no-repeat
+}
+
+.mb {
+    margin-bottom: 30px;
+}
+
+.htag {
+    margin: 20px 0px;
+}
+
+.htag li {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 0 5px;
+}
+
+.htag li a {
+    text-transform: none;
+}
