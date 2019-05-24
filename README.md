@@ -3,7 +3,8 @@ Projet Europa
 
 ## Introduction
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Notre intention était de créer un site informatif à l'attention des jeunes en âge de voter. Pour celà nous avons créé un formulaire pour connaître les intentions de votes de chacun, ce qui nous permet en même temps de les utiliser pour envoyer notre newsletter.
+Aussi, nous avons répertorié les programmes de chaque parti en les situant sur une échelle d'extrême gauche à extrême droite et en implémentant un tri par conviction propre à chacun (#environnement, #technologie...). Nous permettons donc aux utilisateurs d'avoir des résultats pertinents avant même de lire les programmes.
 
 ## Documentation sur l'API
 
@@ -15,8 +16,10 @@ La gestion des utilisateurs ce fait via une API CouchDB dont la description est 
 ## Equipe
 
 - Julien Noyer <https://bit.ly/2MdYM0Z>
+- Malek Gegham, intégrateur
+- Diariatou Diakité, respnsable du contenu et du ton employé
+- Clémence Pidancier et Manon Guidez, maquettes UX/UI
 
 ## Restitution
 
-- Lien Google Drive présentation 1 <add-link-here>
-- Lien Google Drive présentation 2 <add-link-here>
+- Lien Google Drive dossier complet (présentation + maquettes) <https://drive.google.com/open?id=1reSN5pQL0eIBqgJNaUY1ZKI44R0FOAG6>
